@@ -1,0 +1,163 @@
+body{
+	background: #f5f5f5;
+}
+.jichuruanjian-software dl{
+	display: inline-block;
+	padding-left:0;
+	overflow: hidden;
+	padding-right:0;
+	color:white;
+	position: relative;
+}
+.ceng{
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	z-index: 1;
+}
+.particummend-fe{
+	background: white;
+	border:none;
+	width:286px;
+	height:330px;
+}
+.particummend-cont{
+	padding-top:4px;
+	margin-top: 10px;
+}
+.jichuruanjian-software dl:nth-child(1){
+	background: url(../images/1119c8de1778d7c862fdebbc3c466222e5a006611405b-uJqpfG_fw658.png) no-repeat left center;
+}
+.jichuruanjian-software dl:nth-child(2){
+	background: url(../images/8b39c7ca257840cb3fa0f026ed2c4c6823917bac223fa-0TMJeT_fw658.png) no-repeat left center;
+}
+.jichuruanjian-software dl:nth-child(3){
+	background: url(../images/8f2e54b2769dea6b536a277ebfba154902c423dd29aa3-40CPza_fw658.png) no-repeat left center;
+}
+.jichuruanjian-software dl:nth-child(4){
+	background: url(../images/989b4372e3668217a3e0ae4671f0cd4870cf7d7d7ab0-uxhy6x_fw658.png) no-repeat left center/100%;
+}
+.jichuruanjian-software dl p{
+	text-align: center;
+	position: relative;
+	z-index: 2;
+}
+.particu-mmend-head span{
+	padding-top: 0;
+	width:152px;
+	color:#333;
+	font-size: 20px;
+	line-height: 40px;
+	background: url(../images/shiyong.png) no-repeat left center/100% 100%;
+}
+.parimg{
+	height:84px;
+	margin:23px auto;
+}
+.parimg img{
+	top:0;
+	height: 100%;
+}
+.particummend-fe h3{
+	    padding: 21px 0 11px;
+}
+.xinghao-c{
+	color:#4e4e4e;
+}
+.particummend-fe p b{
+	font-size: 18px;
+	color:orange;
+	margin-bottom: 20px;
+}
+.particummend-fe p button{
+	color:#2c8afa;
+	font-size: 18px;
+	background: white;
+	border:1px solid #2c8afa;
+	width:141px;
+	height: 38px;
+}
+
+/*项目推荐*/
+#itemReco{
+	width:100%;
+	background: url(../images/bgs.png) no-repeat 57% top/113%;
+}
+.ieme-coq{
+	width:1200px;
+	margin:0 auto;
+	text-align: center;
+}
+.ieme-coq>p{
+	display: inline-block;
+	width:150px;
+	padding:5px 7px;
+	height:60px;
+	margin:40px auto 10px;
+	background: white;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+.ieme-coq>p span:nth-child(1){
+	display:block;
+	width:90%;
+	margin:0 auto;
+	color:#2c8afa;
+	background: url(../images/shiyong.png) no-repeat left center/100%;
+}
+.ieme-coq>p span:nth-child(2){
+	font-size: 12px;
+	color:#4e4e4e;
+}
+.ieme-coq>div>div{
+	/*border:1px solid #bfbfbd;*/
+}
+.max-img{
+	background: url(../images/5d1564d2e4f3433143d16a5f553ece29e450214611ac5-NpTUzs_fw658.png) no-repeat left center/100%;
+}
+#consultants{
+	height: 419px;
+	width: 100%;
+	background: white;
+}
+#guarantee-sy{
+	margin-top: 0;
+}
+.consultantsC{
+	width:1200px;
+	margin:0 auto;
+	display: flex;
+	justify-content: flex-start;
+}
+.consultantsC>div{
+	width:388px;
+	margin-top:33px;
+	padding:0 20px;
+}
+.consultantsC>div p{
+	border-bottom: 1px solid #4e4e4e;
+	height: 30px;
+	line-height: 30px;
+}
+.consultantsC>div:nth-child(1){
+	padding:0;
+	width:424px;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+	height: 300px;
+}
+.consultantsC>div:nth-child(1) img{
+	height: 100%;
+	position: relative;
+	right:300px;
+}
+.wrapap{
+	width:1240px;
+	margin:0 auto;
+	background: whitesmoke;
+	padding-top: 40px;
+}

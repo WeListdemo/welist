@@ -1,0 +1,125 @@
+#particu-mmend{
+	width:1200px;
+	margin:0 auto;
+}
+.particu-mmend-head{
+	width:100%;
+	text-align: center;
+}
+.particu-mmend-head span{
+	display: block;
+	margin:0 auto;
+	width:177px;
+	height:40px;
+	box-sizing: border-box;
+	padding-top:15px;
+	color:#2c8afa;
+	font-size: 24px;
+	background: url(../images/lanq.png) no-repeat left center;
+}
+.particummend-cont{
+	width:100%;
+	margin-top:30px;
+}
+.particummend-fe{
+	width:285px;
+	display: inline-block;
+	height:366px;
+	border:1px solid #bfbfbf;
+	margin-bottom: 11px;
+	box-sizing: border-box;
+	margin-right: 11px;
+	position: relative;
+	border-radius: 9px;
+	left:0;
+}
+.particummend-fe:nth-child(4n){
+	margin-right: 0;
+}
+/*tu*/
+.parimg{
+	box-sizing: border-box;
+position: relative;
+	height:182px;
+}
+.parimg img{
+	position: relative;
+	top:20px;
+}
+.particummend-fe h3{
+	text-align: center;
+	padding:11px 0 17px ;
+	font-weight: 100;
+	margin:0;
+}
+.particummend-fe p{
+	text-align: center;
+	overflow: hidden;
+}
+.particummend-fe p b{
+	font-weight: 100;
+	display: block;
+	color:red;
+}
+.particummend-fe p button{
+	display: block ;
+	border:none;
+	margin:0 auto;
+	margin-top: 5px;
+	padding:2px 8px;
+	border-radius: 4px;
+	background: #2c8afa;
+	color:white;
+}
+/*查看更多*/
+.chakangengduo{
+	width:100%;
+	text-align: center;
+}
+.chakangengduo input{
+	background: white;
+	color:#2c8afa;
+	border:1px solid #2c8afa;
+	width:190px;
+	font-size: 18px;
+	border-radius: 8px;
+	height:40px;
+}
+/*电商*/
+.dianshang-img{
+	width:1200px;
+	margin: 0 auto;
+	height:104px;
+	margin:42px auto 44px;
+	background: url(../images/c3101192ae7829649bbfeb61fedbc4b9adcd9ce5173fb-D1w19A_fw658.png) no-repeat left center/100% 200%
+}
+.dianshang-img h2{
+	color:white;
+	width:626px;
+	padding-top: 17px;
+	margin:0;
+	text-align: center;
+}
+.dianshang-img p{
+	color:white;
+	width:626px;
+	text-align: center;
+}
+/*服务商*/
+#facilitator{
+	width:1200px;
+	margin:42px auto;
+	display: flex;
+	justify-content: flex-start;
+}
+#facilitator a{
+	display: inline-block;
+	width:240px;
+	height:139px;
+	margin:0;
+}
+#facilitator a img{
+	width:100%;
+	height:100%;
+	display: block;
+}
