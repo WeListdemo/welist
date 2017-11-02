@@ -7,9 +7,19 @@
     <script src="./jquery-1.10.2.min.js"></script>
     <script src="./ghpage.js"></script>
     <link rel="stylesheet" href="./ghpage.css">
+    <style type="text/css">
+       .one div{
+          width:200px;
+          height: 200px;
+          margin:5px;
+          border:1px solid #000;
+          float: left;
+       }
+    </style>
 </head>
 
 <body>
+  <div style="width:880px;margin:10px auto" class="one"></div>
     <div style="width:880px;margin:0 auto;text-align: center;">
         <div id="kkpager"></div>
     </div>
@@ -20,18 +30,21 @@
     $(function() {
 
         var data = [1, 2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];
-        console.log(data.length)
-        page(data,6);
+        page(data,8);
         //a:data
         //b:一页显示多少数据
         function page(a,b) {
             var totalPage = Math.ceil(a.length/b);
             var totalRecords = a.length; //数据量
             var arr = [];
+            $('.one').html('');
             for(var i = 0;i<b; i++){
-                arr.push(a[i]);
+                if(a[i]){
+                   arr.push(a[i]); 
+                }
+                
             }
-            console.log(arr);
+            shuju(arr)
             kkpager.generPageHtml({
                 pno: 1,
                 total: totalPage,
@@ -39,14 +52,24 @@
                 mode: 'click',
                 click: function(n) { //n:获取的当前页码数；可以在次数渲染数据 
                     arr= [];
+                    $('.one').html('');
                     for(var i = (n*b-b); i<n*b; i++){
-                        arr.push(a[i]);
+                        if(a[i]){
+                            arr.push(a[i]);
+                        }
+                        
                     }
-                    console.log(arr);
+                    shuju(arr);
                     this.selectPage(n);
                     return false;
                 }
             });
+        }
+
+        function shuju(arr){
+            for(let i =0;i<arr.length;i++){
+                $('.one').append('<div>'+arr[i]+'</div>')
+            }
         }
     });
 </script>
