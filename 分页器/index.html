@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>分页</title>
+    <script src="./jquery-1.10.2.min.js"></script>
+    <script src="./ghpage.js"></script>
+    <link rel="stylesheet" href="./ghpage.css">
+</head>
+
+<body>
+    <div style="width:880px;margin:0 auto;text-align: center;">
+        <div id="kkpager"></div>
+    </div>
+</body>
+
+</html>
+<script>
+    $(function() {
+
+        var data = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+        page(data.length / 10, data);
+        //a:一共显示多少页数;
+        //b:数据量
+        function page(a, b, c) {
+            var totalPage = a;
+            var totalRecords = b.length; //数据量
+
+            kkpager.generPageHtml({
+                pno: 1,
+                total: totalPage,
+                totalRecords: totalRecords,
+                mode: 'click',
+                click: function(n) { //n:获取的当前页码数；可以在次数渲染数据 
+
+                    this.selectPage(n);
+                    return false;
+                }
+            });
+        }
+    });
+</script>
