@@ -19,21 +19,30 @@
 <script>
     $(function() {
 
-        var data = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-        page(data.length / 10, data);
-        //a:一共显示多少页数;
-        //b:数据量
-        function page(a, b, c) {
-            var totalPage = a;
-            var totalRecords = b.length; //数据量
-
+        var data = [1, 2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];
+        console.log(data.length)
+        page(data,6);
+        //a:data
+        //b:一页显示多少数据
+        function page(a,b) {
+            var totalPage = Math.ceil(a.length/b);
+            var totalRecords = a.length; //数据量
+            var arr = [];
+            for(var i = 0;i<b; i++){
+                arr.push(a[i]);
+            }
+            console.log(arr);
             kkpager.generPageHtml({
                 pno: 1,
                 total: totalPage,
                 totalRecords: totalRecords,
                 mode: 'click',
                 click: function(n) { //n:获取的当前页码数；可以在次数渲染数据 
-
+                    arr= [];
+                    for(var i = (n*b-b); i<n*b; i++){
+                        arr.push(a[i]);
+                    }
+                    console.log(arr);
                     this.selectPage(n);
                     return false;
                 }
