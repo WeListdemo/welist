@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="page.css" type="text/css" rel="stylesheet" />
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="page.js"></script>
+</head>
+
+<body>
+
+    <div class="box">
+        <ul class="page" maxshowpageitem="5" pagelistcount="10" id="page"></ul>
+    </div>
+    <div class="add">tianjia +++++=</div>
+</body>
+
+</html>
+<script type="text/javascript">
+    var data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+
+
+    /*
+      pageing(a,b,c);
+      a:传入数据
+      b:默认显示哪一页
+      function：点击页数的回掉函数，回掉函数收一个参数  参数为点击的页数
+       ***********
+      <ul class="page" maxshowpageitem="5" pagelistcount="10" id="page"></ul>
+      maxshowpageitem： 最多显示多少页，
+      pagelistcount：   每页显示的数据量
+    */
+
+    var arr = [];
+
+    function pageing(a, b) {
+        arr = [];
+        var length = $('#page').attr('pagelistcount');
+        for (var i = 0; i < length; i++) {
+            if (a[i]) {
+                arr.push(a[i]);
+            }
+        }
+        console.log(arr); //调用渲染函数
+        $("#page").initPage(a.length, b, function(num) {
+            arr = [];
+            for (var i = num * length - length; i < num * length; i++) {
+                if (a[i]) {
+                    arr.push(a[i])
+                }
+            }
+            console.log(arr);
+        })
+    }
+
+
+
+    pageing(data, 1);
+
+
+
+    $('.add').click(function() { //模拟点击数据数量变化
+        for (var i = 16; i < 117; i++) {
+            data.push(i);
+        }
+        pageing(data, 1);
+    })
+</script>
