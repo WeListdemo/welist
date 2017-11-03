@@ -1,0 +1,20 @@
+{
+    "name": "face",
+    "version": "1.0.0",
+    "description": "A minimal Electron application",
+    "main": "main.js",
+    "scripts": {
+        "install": "node-pre-gyp install --fallback-to-build --runtime=electron --target=1.7.9 --target_arch=x64 --directory=node_modules/serialport/ --update-binary --dist-url=https://atom.io/download/atom-shell",
+        "start": "electron .",
+        "package": "electron-packager ./ Face --win --out QDYY --arch=ia32 --version 1.7.9 --overwrite --ignore=node_modules  --version-string.CompanyName=手术室管家 --version-string.ProductName=手术室管家 --icon=./app/img/ico.ico"
+    },
+    "devDependencies": {
+        "electron-packager": "^8.6.0",
+        "electron-rebuild": "^1.5.11",
+        "grunt-electron-installer": "^2.1.0"
+    },
+    "dependencies": {
+        "modbus-rtu": "^0.1.1",
+        "serialport": "^3.1.2"
+    }
+}
