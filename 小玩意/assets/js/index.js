@@ -1,8 +1,6 @@
  //分页函数
- let arr = [];
-
  const pageing = (a, b) => {
-     arr = [];
+     let arr = [];
      const length = $('#page').attr('pagelistcount');
      for (let i = 0; i < length; i++) {
          if (a[i]) {
@@ -23,9 +21,6 @@
 
 
 
-
-
-
  //获取菜谱类别  -->页面加载完成之后调用
  const CaipuList = () => {
      $.ajax({
@@ -39,6 +34,8 @@
  }
 
  CaipuList();
+
+
 
  //渲染html函数
 
