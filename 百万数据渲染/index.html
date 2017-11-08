@@ -42,11 +42,34 @@
             background: rebeccapurple;
             margin: 10px 0;
         }
+        
+        div:nth-child(odd) {
+            background: red;
+        }
+        
+        h3 {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            width: 200px;
+            height: 50px;
+            background: rgba(0, 0, 0, .7);
+            line-height: 50px;
+            text-align: center;
+            z-index: 55;
+            color: #fff;
+            margin-top: -25px;
+            margin-left: -100px;
+        }
+        
+        h3 span {
+            color: brown;
+        }
     </style>
 </head>
 
 <body>
-
+    <h3>加载数据<span></span>条</h3>
 </body>
 
 </html>
@@ -54,7 +77,6 @@
 <script>
     let data = [];
     let dataNew = [];
-    let start = 0;
 
 
     const xuan = (data) => {
@@ -64,8 +86,12 @@
                 $('<div>' + (data[num][i] + 1) + '</div>').appendTo($('body'));
             }
             num++;
+            $('span').html(num * 100);
+            if (num * 100 == 30000) {
+                $('h3').html('加载完成')
+            }
             if (num == data.length) {
-                alert('完成')
+
                 clearInterval(t);
 
             }
@@ -78,9 +104,9 @@
             data.push(i);
         }
         let num = 1;
-        for (let j = 0; j < Math.ceil(date / 50); j++) {
+        for (let j = 0; j < Math.ceil(date / 100); j++) {
             dataNew.push([]);
-            for (var i = num * 50 - 50; i < num * 50 && i < date; i++) {
+            for (var i = num * 100 - 100; i < num * 100 && i < date; i++) {
                 dataNew[(num - 1)].push(i);
             }
             num++
@@ -89,7 +115,7 @@
 
     }
 
-    ChaFen(5000000);
+    ChaFen(30000);
 
     $('body').on('click', 'div', (e) => {
         alert($(e.target).html())

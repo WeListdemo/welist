@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    color: #333;
+    font-family: '微软雅黑';
+}
+
+body {
+    padding: 50px 0 0 235px;
+    position: relative;
+    transition: all 0.4s;
+    background: #f3f3f3;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    /* project id 165617 */
+    src: url('//at.alicdn.com/t/font_165617_ncnnimguxxl2fbt9.eot');
+    src: url('//at.alicdn.com/t/font_165617_ncnnimguxxl2fbt9.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_165617_ncnnimguxxl2fbt9.woff') format('woff'), url('//at.alicdn.com/t/font_165617_ncnnimguxxl2fbt9.ttf') format('truetype'), url('//at.alicdn.com/t/font_165617_ncnnimguxxl2fbt9.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont";
+    font-style: normal;
+    font-size: 16px;
+}

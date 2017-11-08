@@ -1,0 +1,90 @@
+header {
+    width: 100%;
+    height: 50px;
+    background: #2b3643;
+    position: fixed;
+    padding-left: 235px;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+header .head_log {
+    width: 235px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0 20px;
+    line-height: 50px;
+}
+
+header .head_log span {
+    float: right;
+    color: #a7b5c6;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+header .head_log span:hover {
+    color: #fff;
+}
+
+header .user {
+    width: 315px;
+    height: 50px;
+    float: right;
+    padding: 0 20px;
+}
+
+header .user .user_box {
+    float: right;
+    padding: 0 20px;
+    display: inline-block;
+    height: 50px;
+    overflow: hidden;
+}
+
+header .user .user_box img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: left;
+}
+
+header .user .user_box span {
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    color: #a7b5c6;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+header .user .user_box:hover {
+    background: #909cab;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #a7b5c6;
+    z-index: 998;
+    background: #2b3643;
+}
+
+.content {
+    width: 100%;
+    height: 936px;
+    background: #f3f3f3;
+    position: relative;
+}
