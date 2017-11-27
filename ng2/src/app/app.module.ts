@@ -5,11 +5,15 @@ import { AngularEchartsModule } from 'ngx-echarts';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
+import { ZhexiantouComponent } from './components/zhexiantou/zhexiantou.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ZhexiantouComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

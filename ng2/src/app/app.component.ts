@@ -14,10 +14,14 @@ export class AppComponent {
 
   } 
   ngOnInit() {
+    //获取浏览器高度；
+    $('.content').css('min-height',document.body.clientHeight+'px')
+    ;
+    //侧导航收缩
     let ShouSuo = true;
     $('.head_log span').on('click',()=>{
       if(ShouSuo){
-        $('body').css('padding-left','20px');
+        $('body').css('padding-left','0');
         $('.accordion').css('left','-235px');
         ShouSuo = false;
       }else{
@@ -25,10 +29,24 @@ export class AppComponent {
         $('.accordion').css('left','0');
         ShouSuo = true;
       }
-
     })
+    //个人信息
+    let selfflag = true;
+    $('.user_box').on('click',()=>{
+      if(selfflag){
+        $('.selfinfo').css('top','50px');
+        selfflag = false;
+      }else{
+         $('.selfinfo').css('top','-230px');
+         selfflag = true;
+      }
+    })
+
+
   }
 
-
+ public login:any = () =>{
+    this.router.navigate(['/login']);
+  }
 
 }

@@ -7,13 +7,24 @@ ul {
  * Contenedor Principal
  ===========================*/
 
-.accordion {
+.mynav {
     position: absolute;
     left: 0;
     top: 50px;
     width: 235px;
     background: #364150;
     height: 936px;
+    transition: all 0.4s;
+    z-index: 9999;
+}
+
+.accordion {
+    position: fixed;
+    left: 0;
+    top: 50px;
+    width: 235px;
+    background: #364150;
+    height: 100%;
     transition: all 0.4s;
 }
 

@@ -10,14 +10,23 @@
     <div class="user">
         <div class="user_box">
             <img src="./assets/img/user.jpg">
-            <span>Alex</span>
+            <span>FiveNing</span>
             <span class="iconfont">&#xe7cf;</span>
+        </div>
+        <div class="selfinfo">
+            <img src="./assets/img/user.jpg" alt="">
+            <h6>
+                <span class="left">用户名：FiveNing</span>
+                <span class="right">职位：前端工程师</span>
+                <div (click)='login()'>退出登录</div>
+            </h6>
         </div>
     </div>
     <!--user end-->
 </header>
 
 <!--nav start-->
+
 <ul id="accordion" class="accordion">
 
     <li>
@@ -26,7 +35,7 @@
 
         <ul class="submenu">
 
-            <li><a>折线图</a></li>
+            <li><a [routerLink]="['/zhexiantu']">折线图</a></li>
 
             <li><a>柱状图</a></li>
 
@@ -115,6 +124,7 @@
     </li>
 
 </ul>
+
 <!--nav end-->
 
 <div class="content">
