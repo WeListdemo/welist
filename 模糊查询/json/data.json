@@ -1,0 +1,25 @@
+[{
+    "name": "男士加绒裤",
+    "porint": "88",
+    "color": ["#000", "#fff", "blue"]
+}, {
+    "name": "男士小脚裤",
+    "porint": "60",
+    "color": ["#000", "#fff", "blue"]
+}, {
+    "name": "男士秋裤",
+    "porint": "25",
+    "color": ["#000", "#fff", "blue"]
+}, {
+    "name": "女士加绒裤",
+    "porint": "108",
+    "color": ["#000", "#fff", "blue"]
+}, {
+    "name": "女士小脚裤",
+    "porint": "48",
+    "color": ["#000", "#fff", "blue"]
+}, {
+    "name": "女士秋裤",
+    "porint": "19",
+    "color": ["#000", "#fff", "blue"]
+}]
